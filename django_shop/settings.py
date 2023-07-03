@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
+    'coupons.apps.CouponsConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +132,9 @@ EMAIL_HOST_USER = "romangvaramadze@gmail.com"
 EMAIL_HOST_PASSWORD = "xnvgkiswgzoezxcj"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51NPNkRJbl0LlWzfnqOVTzixWbRuQIbD0O3EVSwOYLAz9dVRZHOMJFXAokPIc0lONxMtGxFlslATJn6EfDaOa1QTl00n9JeM00Q'
+STRIPE_SECRET_KEY = 'sk_test_51NPNkRJbl0LlWzfnBCWu8NTfJk9R2xIEGbQxacxYHzSAV113JhRCRmS9wytv2GqhdkTLCJx0ZyaLkuVQJ5nUIoGl00rt5s4zR1'
+STRIPE_API_VERSION = '2022-08-01'
+STRIPE_WEBHOOK_SECRET = 'whsec_4bb1bbe8fd3d379776db5603c48cfdb56851166a7c1a779843207991a2717dcb'
